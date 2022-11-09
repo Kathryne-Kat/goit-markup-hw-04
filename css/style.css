@@ -151,7 +151,6 @@ address {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  /* max-width: 1600px; */
   background-color: var(--accent-color);
   background-image: linear-gradient(
       to right,
@@ -160,7 +159,7 @@ address {
     ),
     url(../images/img_hero.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 
   text-align: center;
@@ -332,19 +331,18 @@ address {
 /*-----clients-----*/
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .element.clients {
-  display: block;
-  flex-basis: calc((100% - 120px) / 5);
+  flex-basis: calc((100% - 150px) / 6);
   border: 1px solid var(--social-networks-icon);
   border-radius: 4px;
-  height: 92px;
-  padding: 16px 32px;
+  /* height: 92px; */
+  padding: 15px 30px;
 }
 .logo-clients {
   display: block;
-
   fill: var(--social-networks-icon);
 }
 .element.clients:hover,
